@@ -7,6 +7,9 @@ export default function MovieNavigation({ id }: { id: string }) {
       <nav className={styles.nav}>
         <ul>
           <li>
+            <Link href={`/movies/${id}`}>movie</Link>
+          </li>
+          <li>
             <Link href={`/movies/${id}/credits`}>credits</Link>
           </li>
           <li>

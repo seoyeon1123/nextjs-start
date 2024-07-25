@@ -1,7 +1,7 @@
 .nav {
   display: flex;
-  justify-content: center; /* 네비게이션 바를 수평 중앙 정렬 */
-  width: 80%; /* 네비게이션 바 너비를 80%로 설정 */
+  justify-content: center;
+  width: 80%;
   margin: 0 auto; /* 수평 중앙 정렬을 위한 자동 마진 */
   padding: 10px 0; /* 상하 패딩 */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 추가 */

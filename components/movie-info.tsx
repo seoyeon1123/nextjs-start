@@ -15,19 +15,22 @@ export default async function MovieInfo({ id }: { id: string }) {
   return (
     <>
       <div className={styles.container}>
-        <img
-          className={styles.poster}
-          src={movies.poster_path}
-          alt={movies.title}
-        />
+        <div className={styles.imgContainer}>
+          <img
+            className={styles.poster}
+            src={movies.poster_path}
+            alt={movies.title}
+          />
+          <a href={movies.homepage} target={'_blank'}>
+            🏠 HomePage &rarr;
+          </a>
+        </div>
         <div className={styles.info}>
-          <div className={styles.title_container}>
-            <h1 className={styles.title}>{movies.title}</h1>
-            <a href={movies.homepage} target={'_blank'}>
-              🏠 HomePage &rarr;
-            </a>
+          <h1 className={styles.title}>{movies.title}</h1>
+          <div className={styles.sub_container}>
+            <h3>⭐️ {movies.vote_average.toFixed(1)}</h3>
+            <h3>🕖 {movies.runtime}</h3>
           </div>
-          <h3>⭐️ {movies.vote_average.toFixed(1)}</h3>
           <p>{movies.overview}</p>
         </div>
       </div>
